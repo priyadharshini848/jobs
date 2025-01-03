@@ -1,0 +1,158 @@
+/* Global Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+/* Dashboard Container */
+.student-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Adding gradient background */
+  padding: 40px 20px;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.dashboard-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e3c72;
+  margin-bottom: 20px;
+}
+
+.dashboard-header p {
+  font-size: 1.2rem;
+  color: #4b4f58;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grid Layout for Content */
+.dashboard-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+/* Individual Section Cards */
+.dashboard-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card h3 {
+  font-size: 1.8rem;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+.dashboard-card p {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.dashboard-card button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dashboard-card button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.dashboard-card button:focus {
+  outline: none;
+}
+
+/* Footer Section */
+.dashboard-footer {
+  margin-top: 60px;
+  text-align: center;
+  color: #777;
+  font-size: 1rem;
+}
+
+.dashboard-footer p {
+  margin-top: 20px;
+}
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar h2 {
+  text-align: center;
+  color:white;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.sidebar ul li:hover {
+  background-color: #34495e;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}

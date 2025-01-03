@@ -1,0 +1,204 @@
+/* General container styling */
+.qna-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Header styling */
+.qna-header {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Question input section */
+.qna-input-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.qna-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  resize: none;
+  background-color: #fbfbfb;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.qna-post-btn {
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.qna-post-btn:hover {
+  background-color: #357ab8;
+  transform: translateY(-2px);
+}
+
+/* Question card styling */
+.qna-question {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.qna-question:hover {
+  transform: scale(1.02);
+}
+
+.qna-question-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+/* Voting section */
+.qna-vote-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.qna-upvote-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.qna-upvote-btn:hover {
+  background-color: #357ab8;
+  transform: translateY(-2px);
+}
+
+.qna-votes {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555555;
+}
+
+/* Answers section */
+.qna-answers {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.qna-answer {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #333333;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.qna-no-answer {
+  font-size: 0.95rem;
+  color: #888888;
+  font-style: italic;
+}
+
+/* Answer input section */
+.qna-answer-input-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.qna-answer-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  resize: none;
+  background-color: #fbfbfb;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.qna-answer-btn {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.qna-answer-btn:hover {
+  background-color: #357ab8;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .qna-container {
+    padding: 15px;
+  }
+
+  .qna-header {
+    font-size: 1.8rem;
+  }
+
+  .qna-input,
+  .qna-answer-input {
+    font-size: 0.9rem;
+  }
+
+  .qna-upvote-btn,
+  .qna-post-btn,
+  .qna-answer-btn {
+    font-size: 0.9rem;
+  }
+} 
+/* Downvote button */
+.qna-downvote-btn {
+  padding: 8px 15px;
+  font-size: 1rem;
+  background-color: #d9534f; /* Red color for downvote */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qna-downvote-btn:hover {
+  background-color: #c9302c; /* Darker red on hover */
+}

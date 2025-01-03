@@ -1,0 +1,47 @@
+/* FrontPage.css */
+.front-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #220ced, #f3eeee); /* Gradient background */
+    color: white;
+    text-align: center;
+  }
+  
+  .front-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .front-page p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .role-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .role-buttons button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 200px;
+  }
+  
+  .role-buttons button:hover {
+    background-color: #2a5298;
+  }
+  
+  .role-buttons button:focus {
+    outline: none;
+  }
+  

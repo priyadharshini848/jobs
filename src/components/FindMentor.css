@@ -1,0 +1,124 @@
+/* General container styling for the FindMentor page */
+.find-mentor-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.find-mentor-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the mentor card container */
+.mentor-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Each mentor card styling */
+.mentor-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for each card */
+.mentor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the mentor image (passport style) */
+.mentor-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 3px solid #007bff;  /* Blue border around the image */
+}
+
+/* Image inside the mentor image container */
+.mentor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styling for text inside the mentor card */
+.mentor-info {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Styling for individual mentor info items */
+.mentor-info p {
+  margin: 5px 0;
+}
+
+/* Choose button styling */
+.mentor-info button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mentor-info button:hover {
+  background-color: #0056b3;
+}
+
+/* Make sure to handle the case for no image */
+.no-image {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #999;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px dashed #ccc;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .mentor-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .mentor-cards {
+    grid-template-columns: 1fr;
+  }
+}

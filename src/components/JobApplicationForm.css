@@ -1,0 +1,154 @@
+.application-form-container {
+    width: 50%;
+    margin: 20px auto;
+  }
+  
+  .application-form-container h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  .application-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 90%; /* Adjust based on your design */
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    background: transparent;
+    border: none;
+    font-size: 24px; /* Make it visually distinct */
+    cursor: pointer;
+    color: #333;
+    margin-right: 10px; /* Add spacing between the arrow and the title */
+  }
+  
+  .back-button:hover {
+    color: #000;
+  }
+  
+  .form-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .application-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9; /* Light grey to contrast with the job postings page */
+    padding: 30px;
+    width: 60%; /* Increased width */
+    max-width: 700px; /* Limit maximum size */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for emphasis */
+    border-radius: 12px; /* Slightly rounded corners for a modern look */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out the back button and form title */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc; /* Separator line for header */
+    padding-bottom: 10px;
+  }
+  
+  .back-button {
+    background: transparent;
+    border: none;
+    font-size: 28px; /* Larger arrow for emphasis */
+    cursor: pointer;
+    color: #007bff; /* Blue color for better visibility */
+    margin-right: 10px; /* Space between arrow and text */
+  }
+  
+  .back-button:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Neutral dark color for text */
+  }
+  
+  .job-application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased spacing between form elements */
+  }
+  
+  .job-application-form label {
+    font-weight: bold;
+    color: #555; /* Slightly muted text color */
+  }
+  
+  .job-application-form input,
+  .job-application-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .job-application-form button {
+    background-color: #007bff; /* Primary blue button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .job-application-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  

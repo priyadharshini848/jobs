@@ -1,0 +1,92 @@
+/* Container for the login page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('data:image/jpeg;base64,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');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Box styling for the login form */
+  .login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Header for the login form */
+  .login-header h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .login-header p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the form inputs */
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Login button */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #523996;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-button:hover {
+    background-color: #523996;
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #3a4e88;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .forgot-password:hover {
+    color: #373988;
+  }
+  
+  /* Create account link */
+  .create-account {
+    margin-top: 20px;
+  }
+  
+  .create-account p {
+    color: #666;
+  }
+  
+  .create-account a {
+    color: #5744ab;
+    text-decoration: none;
+  }
+  
+  .create-account a:hover {
+    text-decoration: underline;
+  }

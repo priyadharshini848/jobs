@@ -1,0 +1,42 @@
+/* SplashScreen.css */
+.splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff; /* Background color of splash screen */
+  }
+  
+  .logo {
+    width: 200px; /* Adjust the logo size */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* SplashScreen.css */
+.splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff; /* Background color of splash screen */
+    transition: opacity 1s ease-in-out; /* Smooth fade-out effect */
+  }
+  
+  .logo {
+    width: 200px; /* Adjust the logo size */
+  }
+  
+  /* When the page fades out, we add a fade-out class */
+  body.fade-out .splash-screen {
+    opacity: 0;
+    pointer-events: none; /* Avoid any interaction during the fade-out */
+  }
+  
